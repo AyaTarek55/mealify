@@ -16,10 +16,59 @@
     --color-light: hsl(0, 0%, 100%);
     --animation-duration: 400ms;
 }
-
+p {
+    color: #4f4f5a; /* Light mode color */
+}
 body {
     font-family: var(--font-default);
 
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+body.dark-mode p {
+    color: white;
+}
+body.dark-mode .home-sec {
+    background-color: #2e2e2e;
+}
+
+body.dark-mode .home-sec .home-content h2,
+body.dark-mode .sec-title h2,
+body.dark-mode .footer .column h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-links ul li a {
+    color: #b3b3b3;
+}
+
+body.dark-mode .footer {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .footer .column p, body.dark-mode .footer .column a {
+    color: #bbbbbb;
+}
+
+body.dark-mode .contact-info .info-box {
+    background-color: #333;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .btn1 {
+    background-color: #b3b3b3;
 }
 
 img {
@@ -197,7 +246,6 @@ li {
     margin-block: 20px;
     line-height: 1.6;
     font-size: 1rem;
-    color: #4f4f5a;
     font-size: 16px;
 }
 
@@ -273,7 +321,6 @@ li {
 }
 
 .chefs-page .container {
-    background-color: #fff;
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
     padding: 2rem 12rem;
@@ -317,7 +364,6 @@ span {
 
 .chef-cards .chef {
     flex-basis: calc(33.333% - 1.875rem);
-    background-color: var(--color-light);
     text-align: center;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -417,7 +463,6 @@ span {
 
 
 .contact-page .container {
-    background-color: #fff;
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
     padding: 2rem 12rem;
@@ -437,7 +482,6 @@ span {
 }
 
 .contact-page .container {
-    background-color: #fff;
     min-height: 100vh; /* Allow the container to grow with content */
     width: 100%;
 }
@@ -481,7 +525,6 @@ span {
 
 .contact-form {
     width: 100%;
-    background-color: #fff;
     padding: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
