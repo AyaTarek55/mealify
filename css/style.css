@@ -425,7 +425,6 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -439,7 +438,7 @@ span {
 
 .contact-page .container {
     background-color: #fff;
-    height: 100vh;
+    min-height: 100vh; /* Allow the container to grow with content */
     width: 100%;
 }
 
